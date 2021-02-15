@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mentoid/public_html/steward
+    - /bin/cp -R * $DEPLOYPATH
