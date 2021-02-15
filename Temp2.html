@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>SLOT MACHINE</h1>
+
+<h5>Make lots of $MONEY$ here</h5>
+
+<p id="demo"></p> <div id="A"></div>
+
+
+<script>
+
+var win = 0;
+var lose = 0;
+
+do { 
+
+var x =Math.floor(Math.random()*6);
+document.getElementById("demo").innerHTML = x;
+
+if (x == 1) {
+    win++;
+
+    document.getElementById("status").innerHTML = "<h1>$ YOU WON $!!!!</h1>" + win;
+} else {
+    lose++;
+    document.getElementById("status").innerHTML = "<h1>Try again to $$</h1>" + lose;
+
+}
+switch(x)
+    {
+case 0: 
+var image = document.createElement("img");
+        image.src = "Coding_picture/Apple.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+case 1 : var image = document.createElement("img");
+        image.src = "Coding_picture/Watermelon.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+case 2: var image = document.createElement("img");
+       image.src = "Numbers/Picture_of_2.png";
+       document.getElementById("A").appendChild(image);
+break;
+case 3: var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_3.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+case 4: var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_4.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+case 5: var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_5.png";
+        document.getElementById("A").appendChild(image);
+break; 
+case 6: var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_6.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+    }
+
+
+    
+
+}while( win < 1 );   
+</script>
+
+</body>
+</html>

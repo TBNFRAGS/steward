@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>SLOT MACHINE</h1>
+
+<h5>Make lots of $MONEY$ here</h5>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="status"></p>
+
+<script>
+var x =Math.floor(Math.random()*8);
+var y =Math.floor(Math.random()*8);
+var z =Math.floor(Math.random()*8);
+
+
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo2").innerHTML = y;
+document.getElementById("demo3").innerHTML = z;
+
+
+if (x == y  && x ==z  && y ==z) {
+document.getElementById("status").innerHTML = "$ YOU WON $!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!";
+} else {
+document.getElementById("status").innerHTML = "Try again to $$";
+}
+
+</script>
+
+</body>
+</html>

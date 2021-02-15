@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>SLOT MACHINE</h1>
+
+<h5>Make lots of $MONEY$ here</h5>
+
+<p id="demo"></p> <div id="A"></div>
+<p id="demo2"></p> <div id="B"></div>
+<p id="demo3"></p> <div id="C"></div>
+<p id="status"></p>
+
+
+
+<script>
+var x =Math.floor(Math.random()*6);
+var y =Math.floor(Math.random()*6);
+var z =Math.floor(Math.random()*6);
+
+
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo2").innerHTML = y;
+document.getElementById("demo3").innerHTML = z;
+
+
+if (x == y  && x ==z  && y ==z) {
+document.getElementById("status").innerHTML = "<h1>$ YOU WON $!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>";
+} else {
+document.getElementById("status").innerHTML = "<h1>Try again to $$</h1>";
+}
+
+switch(x)
+    {
+case 0: 
+var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_0.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+case 1 : var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_1.png";
+        document.getElementById("A").appendChild(image);
+break;
+case 2: var image = document.createElement("img");
+       image.src = "Numbers/Picture_of_2.png";
+       document.getElementById("A").appendChild(image);
+break;
+case 3: var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_3.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+case 4: var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_4.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+case 5: var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_5.png";
+        document.getElementById("A").appendChild(image);
+break; 
+case 6: var image = document.createElement("img");
+        image.src = "Numbers/Picture_of_6.jpg";
+        document.getElementById("A").appendChild(image);
+break;
+    }
+
+
+    var image = document.createElement("img");
+    switch(y)
+    {
+case 0: 
+
+        image.src = "Numbers/Picture_of_0.jpg";
+        
+break;
+case 1 : 
+        image.src = "Numbers/Picture_of_1.png";
+        
+break;
+case 2: 
+       image.src = "Numbers/Picture_of_2.png";
+       
+break;
+case 3:
+        image.src = "Numbers/Picture_of_3.jpg";
+       
+break;
+case 4: 
+        image.src = "Numbers/Picture_of_4.jpg";
+        
+break;
+case 5: 
+        image.src = "Numbers/Picture_of_5.png";
+        
+break; 
+case 6:
+        image.src = "Numbers/Picture_of_6.jpg";
+       
+break;
+    }
+    document.getElementById("A").appendChild(image);
+
+    var image = document.createElement("img");
+
+
+    switch(z)
+    {
+case 0: 
+
+        image.src = "Numbers/Picture_of_0.jpg";
+        
+break;
+case 1 : 
+        image.src = "Numbers/Picture_of_1.png";
+        
+break;
+case 2: 
+       image.src = "Numbers/Picture_of_2.png";
+       
+break;
+case 3:
+        image.src = "Numbers/Picture_of_3.jpg";
+       
+break;
+case 4: 
+        image.src = "Numbers/Picture_of_4.jpg";
+        
+break;
+case 5: 
+        image.src = "Numbers/Picture_of_5.png";
+        
+break; 
+case 6:
+        image.src = "Numbers/Picture_of_6.jpg";
+       
+break;
+    }
+    document.getElementById("A").appendChild(image);
+
+</script>
+
+</body>
+</html>
