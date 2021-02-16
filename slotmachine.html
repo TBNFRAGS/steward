@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>SLOT MACHINE</h1>
+
+<h5>Make lots of $MONEY$ here</h5>
+
+<p id="demo"></p> <div id="A"></div>
+<div id="status"></div>
+
+<script>
+
+var win = 0;
+var lose = 0;
+
+do {
+
+var x =Math.floor(Math.random()* 10);
+document.getElementById("demo").innerHTML = x;
+
+if (x == 1) {
+    win++;
+
+    document.getElementById("status").innerHTML = "<h1>$ YOU WON $!!!!</h1>" + win + "time(s) & lost "+lose+ " time(s)";
+} else {
+    lose++;
+    document.getElementById("status").innerHTML = "<h1>Try again to $$</h1>" + lose;
+
+}
+switch(x)
+    {
+case 0:addimage("Apple.jpg");
+break;
+case 1:addimage("Watermelon.jpg");
+break;
+case 2:addimage("Banana.jpg");
+break;
+case 3:addimage("Cherry.jpg");
+break;
+case 4:addimage("Orange.jpg");
+break;
+case 5:addimage("Pineapple.jpg");
+break;
+case 6:addimage("Lemon.jpg");
+break;
+default:addimage("Default_fruit.jpg");
+break;
+    }
+
+
+
+}while( win < 1 );
+
+function addimage(imagename){
+  var image = document.createElement("img");
+          image.src = "Coding_picture/"+imagename;
+          document.getElementById("A").appendChild(image);
+}
+</script>
+
+</body>
+</html>
